@@ -1,6 +1,49 @@
-.placeholder {
+/* .placeholder {
     background-color: azure;
 }
 .Anotherclass {
     background-color: lightcyan;
+} */
+body {
+    margin: 0px;
+}
+.containter {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side {
+    /* flex:let the two sit next two each other instead of a new line */
+    display: flex;
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #CEDEEC;
+    text-decoration: none;
+    transition: color 5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid gray;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
 }
